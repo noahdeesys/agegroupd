@@ -1,0 +1,12 @@
+#!/sbin/openrc-run
+
+name="agegroupd"
+description="Age Group Attestation D-Bus Daemon"
+command="/usr/sbin/agegroupd"
+command_user="agegroupd:agegroup"
+command_background="yes"
+pidfile="/run/${RC_SVCNAME}.pid"
+
+depend() {
+    need dbus
+}

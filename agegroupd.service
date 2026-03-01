@@ -1,0 +1,19 @@
+[Unit]
+Description=Age Group Attestation D-Bus Daemon
+After=dbus.service
+Requires=dbus.service
+
+[Service]
+Type=dbus
+BusName=io.github.noahdeesys.AgeGroup
+ExecStart=/usr/sbin/agegroupd
+User=agegroupd
+Group=agegroup
+Restart=on-failure
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/run
+
+[Install]
+WantedBy=multi-user.target
