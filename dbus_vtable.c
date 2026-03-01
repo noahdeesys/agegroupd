@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (c) 2026 Noah Dee <noah@iroha.ca>
+
 #include "agegroup_bus.h"
 
 // Forward-declare the Zig functions so C knows they exist

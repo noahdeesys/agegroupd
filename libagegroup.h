@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// Copyright (c) 2026 Noah Dee <noah@iroha.ca>
+
 #ifndef LIBAGEGROUP_H
 #define LIBAGEGROUP_H
 

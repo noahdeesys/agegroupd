@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (c) 2026 Noah Dee <noah@iroha.ca>
+
 const std = @import("std");
 const c = @cImport({
     @cInclude("agegroup_bus.h");

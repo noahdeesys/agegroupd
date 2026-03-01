@@ -1,0 +1,11 @@
+
+The Client Library (agegroup.zig, libagegroup.h, and resulting static library) 
+is licensed under the MIT License.
+(See LICENSE.MIT)
+
+The Daemon and Utilities (agegroupd.zig, parser.zig, dbus_vtable.c, etc.) 
+are licensed under the GNU Affero General Public License v3.0 or later.
+(See LICENSE.AGPL3)
+
+Files will begin with a SPDX-License-Identifier to specify which license.
+
