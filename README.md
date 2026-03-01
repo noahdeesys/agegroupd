@@ -1,7 +1,6 @@
-# agegroup(1), libagegroup, agegroupd
-#### agegroup(5), viagegroup(8)
+# agegroupd
 
-### Giving Parents Control, and relieving the need for ID harvesting.
+### Give Parents Control, and relieve the need for ID harvesting.
 
 [agegroup-kde-ui.png]
 
@@ -52,6 +51,8 @@ when the user moves between brackets.
 
 ## Examples
 
+agegroup(1) binary not yet implemented.
+
 ```console
 $ date; whoami
 Sun Mar  1 03:12:24 -00 2026
@@ -72,6 +73,8 @@ $ agegroup 15 && echo allow || deny
 allow
 ```
 
+`agegroup_check(n)` and `agegroup_bracket()` are implemented using a D-Bus client.
+
 ```c
 #include <libagegroup.h>
 if (agegroup_check(13)) {
@@ -79,5 +82,21 @@ if (agegroup_check(13)) {
 } else {
     printf("deny")
 }
+printf(agegroup_bracket())
 ```
+
+
+### What's ready
+
+- D-Bus daemon with `/etc/agegroup` configuration file format parser
+- Statically-linked D-Bus client library
+
+
+### What's being worked on
+
+- `agegroup(1)` SGID binary
+- Utilities to edit `/etc/agegroup`
+- `viagegroup(8)` command inspired by `visudo(8)`
+- GUI for editing `/etc/agegroup`
+
 
