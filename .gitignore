@@ -1,6 +1,7 @@
 
 *.o
 *.a
+Manifest
 agegroup
 agegroupd
 viagegroup
